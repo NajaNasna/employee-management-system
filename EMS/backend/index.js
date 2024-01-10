@@ -49,6 +49,7 @@ app.get('/getEditEmployee/:id',(req,res)=>{
     })
 })
 
+
 // update employee from frontend
 app.post('/updateEmployee',(req,res)=>{
     logic.editEmployee(req.body.id,req.body.name,req.body.age,req.body.designation,req.body.salary).then((result)=>{

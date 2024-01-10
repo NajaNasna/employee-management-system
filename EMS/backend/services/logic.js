@@ -17,7 +17,6 @@ const allEmployee = () =>{
                 }
             }
         }
-
     )
 }
 
@@ -48,6 +47,7 @@ const addEmployee = (id, empName, age, desg, salary)=>{
     })
 }
 
+
 const removeEmployee = (id) =>{
     return db.Ems.deleteOne({id}).then((result)=>{
         if(result){
@@ -73,8 +73,7 @@ const getEmployee = (id) =>{
             return{
                 statusCode : 200,
                 employee : result
-            }
-           
+            }          
 
         }else{
             return{
